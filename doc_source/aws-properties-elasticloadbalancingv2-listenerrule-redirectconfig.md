@@ -112,11 +112,11 @@ This example creates a listener rule with an action that redirects HTTPS request
                }
             }
         ],        
-        "Conditions": [
+        "Conditions": [{
             "Field" : "path-pattern",
             "Values" : ["/path"]
-        ],
-        "Listener": {
+        }],
+        "ListenerArn": {
                "Ref": "myHTTPListener"
         },
         "Priority": "1"
